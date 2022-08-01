@@ -59,7 +59,7 @@ func GetCacheOrder(uid int,gid int)(ok bool,order model.Order) {
 	isPaid,_:=RedisClient.HGet(key,"is-paid").Result()
 	is,_:=strconv.Atoi(isPaid)
 	if is==1{
-		order.OrderState=true
+		order.IsPaid=true
 	}else {
 		order.IsPaid=false
 	}
