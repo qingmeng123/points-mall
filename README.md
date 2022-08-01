@@ -1,6 +1,7 @@
 ## 积分商城
 
 ### 架构设计
+``` 
 │  go.mod
 │  go.sum
 │  README.md
@@ -79,7 +80,7 @@ parse.go
 resp.go
 trie.go
 
-
+``` 
 
 
 ### 功能
